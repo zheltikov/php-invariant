@@ -2,6 +2,8 @@
 
 namespace Zheltikov\Invariant;
 
+use Zheltikov\Exceptions\InvariantException;
+
 /**
  * When objects are passed as an argument, without a __toString() defined,
  * causes a fatal error. Handle these objects gracefully by displaying their
@@ -25,7 +27,7 @@ function invariant_violation_helper($arg)
  *
  * @param callable $callback The function that will be called when an invariant
  *                           fails.
- * @throws \Zheltikov\Invariant\InvariantException
+ * @throws \Zheltikov\Exceptions\InvariantException
  */
 function invariant_callback_register(callable $callback): void
 {
@@ -52,7 +54,7 @@ function invariant_callback_register(callable $callback): void
  * @param string $format_str The string that will be displayed when your
  *                           invariant fails, with possible placeholders.
  * @param mixed ...$args
- * @throws \Zheltikov\Invariant\InvariantException
+ * @throws \Zheltikov\Exceptions\InvariantException
  */
 function invariant($test, string $format_str, ...$args): void
 {
@@ -69,7 +71,7 @@ function invariant($test, string $format_str, ...$args): void
  * @param string $format_str The string that will be displayed when your
  *                           invariant fails.
  * @param mixed ...$args
- * @throws \Zheltikov\Invariant\InvariantException
+ * @throws \Zheltikov\Exceptions\InvariantException
  */
 function invariant_violation(string $format_str, ...$args): void
 {
