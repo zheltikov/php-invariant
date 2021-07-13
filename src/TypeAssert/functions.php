@@ -10,8 +10,9 @@ use Zheltikov\Exceptions\TypeAssertionException;
  * @param mixed $value
  * @param string $type
  * @return bool
+ * @throws \Zheltikov\Exceptions\InvariantException
  */
-function is_($value, string $type): bool
+function is_(&$value, string $type): bool
 {
     $checker = TypeChecker::getCheckerFn($type);
     return $checker($value);
@@ -26,8 +27,9 @@ function is_($value, string $type): bool
  * @param string $expected
  * @return mixed
  * @throws \Zheltikov\Exceptions\TypeAssertionException
+ * @throws \Zheltikov\Exceptions\InvariantException
  */
-function as_($value, string $expected)
+function as_(&$value, string $expected)
 {
     if (!is_($value, $expected)) {
         // FIXME: gettype may not be as good as we need
@@ -45,8 +47,9 @@ function as_($value, string $expected)
  * @param mixed $value
  * @param string $expected
  * @return mixed|null
+ * @throws \Zheltikov\Exceptions\InvariantException
  */
-function null_as_($value, string $expected)
+function null_as_(&$value, string $expected)
 {
     try {
         return as_($value, $expected);
