@@ -46,4 +46,5 @@ information inside that string.
 ## TODO
 
 - [X] Build a functional-style assertion library
+- [ ] Add some type assertion functions
 - [ ] Build an object-oriented interface for these functions
