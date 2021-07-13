@@ -17,11 +17,17 @@ final class InvariantCallback
     {
     }
 
+    /**
+     * @return callable|null
+     */
     public static function get(): ?callable
     {
         return self::$callback;
     }
 
+    /**
+     * @param callable|null $callback
+     */
     public static function set(?callable $callback): void
     {
         self::$callback = $callback;
