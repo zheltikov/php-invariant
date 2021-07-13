@@ -2,7 +2,7 @@
 
 namespace Zheltikov\Invariant;
 
-use Zheltikov\Exceptions\InvariantException as _InvariantException;
+use Zheltikov\Exceptions\InvariantException;
 
 /**
  * When objects are passed as an argument, without a __toString() defined,
@@ -87,5 +87,5 @@ function invariant_violation(string $format_str, ...$args): void
     }
     $message = vsprintf($format_str, $args);
 
-    throw new _InvariantException($message);
+    throw new InvariantException($message);
 }
