@@ -1,8 +1,16 @@
 <?php
 
+/**
+ * @deprecated Use package `zheltikov/php-type-assert` instead.
+ */
+
 namespace Zheltikov\Invariant\TypeAssert;
 
-use Zheltikov\Exceptions\TypeAssertionException;
+use function Zheltikov\TypeAssert\{
+    is_ as __is_,
+    as_ as __as_,
+    null_as_ as __null_as_,
+};
 
 /**
  * Checks whether a value has the type specified, and returns a boolean result.
@@ -11,11 +19,11 @@ use Zheltikov\Exceptions\TypeAssertionException;
  * @param string $type
  * @return bool
  * @throws \Zheltikov\Exceptions\InvariantException
+ * @deprecated Use `is_()` from `zheltikov/php-type-assert` instead.
  */
-function is_(&$value, string $type): bool
+function is_($value, string $type): bool
 {
-    $checker = TypeChecker::getCheckerFn($type);
-    return $checker($value);
+    return __is_($value, $type);
 }
 
 /**
@@ -28,17 +36,11 @@ function is_(&$value, string $type): bool
  * @return mixed
  * @throws \Zheltikov\Exceptions\TypeAssertionException
  * @throws \Zheltikov\Exceptions\InvariantException
+ * @deprecated Use `as_()` from `zheltikov/php-type-assert` instead.
  */
-function as_(&$value, string $expected)
+function as_($value, string $expected)
 {
-    if (!is_($value, $expected)) {
-        // FIXME: gettype may not be as good as we need
-        $actual = gettype($value);
-        $message = sprintf('Expected %s, got %s', $expected, $actual);
-        throw new TypeAssertionException($message);
-    }
-
-    return $value;
+    return __as_($value, $expected);
 }
 
 /**
@@ -48,13 +50,9 @@ function as_(&$value, string $expected)
  * @param string $expected
  * @return mixed|null
  * @throws \Zheltikov\Exceptions\InvariantException
+ * @deprecated Use `null_as_()` from `zheltikov/php-type-assert` instead.
  */
-function null_as_(&$value, string $expected)
+function null_as_($value, string $expected)
 {
-    try {
-        return as_($value, $expected);
-    } catch (TypeAssertionException $e) {
-    }
-
-    return null;
+    return __null_as_($value, $expected);
 }
