@@ -7,8 +7,7 @@
       "Zheltikov\\Invariant\\": "src/"
     },
     "files": [
-      "src/functions.php",
-      "src/TypeAssert/functions.php"
+      "src/functions.php"
     ]
   },
   "require": {
