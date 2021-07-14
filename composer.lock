@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8629454e574329baa736df45bd1bc5b4",
+    "content-hash": "9516f8e387566f5f004bdf195d8f5a9b",
     "packages": [
         {
             "name": "zheltikov/php-exceptions",
@@ -50,16 +50,16 @@
         },
         {
             "name": "zheltikov/php-type-assert",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zheltikov/php-type-assert.git",
-                "reference": "d198ffd43c8b9e6df52ae82f4e7cfcbf1f046124"
+                "reference": "5e3d72b852c91826b9af0ca3c10e83f6f04456eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zheltikov/php-type-assert/zipball/d198ffd43c8b9e6df52ae82f4e7cfcbf1f046124",
-                "reference": "d198ffd43c8b9e6df52ae82f4e7cfcbf1f046124",
+                "url": "https://api.github.com/repos/zheltikov/php-type-assert/zipball/5e3d72b852c91826b9af0ca3c10e83f6f04456eb",
+                "reference": "5e3d72b852c91826b9af0ca3c10e83f6f04456eb",
                 "shasum": ""
             },
             "require": {
@@ -91,9 +91,9 @@
             ],
             "support": {
                 "issues": "https://github.com/zheltikov/php-type-assert/issues",
-                "source": "https://github.com/zheltikov/php-type-assert/tree/1.0.1"
+                "source": "https://github.com/zheltikov/php-type-assert/tree/1.0.2"
             },
-            "time": "2021-07-13T15:33:27+00:00"
+            "time": "2021-07-14T10:27:58+00:00"
         }
     ],
     "packages-dev": [
@@ -154,7 +154,8 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.4"
+        "php": "^7.4",
+        "ext-json": "*"
     },
     "platform-dev": [],
     "plugin-api-version": "2.1.0"
