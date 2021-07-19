@@ -1,5 +1,5 @@
 {
-  "version": "1.2.1",
+  "version": "1.2.2",
   "name": "zheltikov/php-invariant",
   "type": "library",
   "autoload": {
@@ -12,12 +12,13 @@
   },
   "require": {
     "php": "^7.4",
-    "zheltikov/php-exceptions": "^1.0",
-    "zheltikov/php-type-assert": "^1.0",
-    "ext-json": "*"
+    "zheltikov/php-exceptions": "^1.0"
   },
   "require-dev": {
     "nazar-pc/phpt-tests-runner": "^1.4"
+  },
+  "suggest": {
+    "zheltikov/php-type-assert": "Provides type checking/assertion functionality."
   },
   "authors": [
     {
