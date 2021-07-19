@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "793daa30d52529fd186f2b74119c2ac8",
+    "content-hash": "60222a2dc7742037533b3581fc5202cf",
     "packages": [
         {
             "name": "zheltikov/php-exceptions",
@@ -47,53 +47,6 @@
                 "source": "https://github.com/zheltikov/php-exceptions/tree/1.0.0"
             },
             "time": "2021-07-13T09:24:39+00:00"
-        },
-        {
-            "name": "zheltikov/php-type-assert",
-            "version": "1.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/zheltikov/php-type-assert.git",
-                "reference": "5e3d72b852c91826b9af0ca3c10e83f6f04456eb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/zheltikov/php-type-assert/zipball/5e3d72b852c91826b9af0ca3c10e83f6f04456eb",
-                "reference": "5e3d72b852c91826b9af0ca3c10e83f6f04456eb",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.3",
-                "zheltikov/php-exceptions": "^1.0",
-                "zheltikov/php-invariant": "^1.1"
-            },
-            "require-dev": {
-                "nazar-pc/phpt-tests-runner": "^1.4"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Zheltikov\\TypeAssert\\": "src/"
-                },
-                "files": [
-                    "src/functions.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Max Zheltikov",
-                    "homepage": "https://github.com/zheltikov"
-                }
-            ],
-            "support": {
-                "issues": "https://github.com/zheltikov/php-type-assert/issues",
-                "source": "https://github.com/zheltikov/php-type-assert/tree/1.0.2"
-            },
-            "time": "2021-07-14T10:27:58+00:00"
         }
     ],
     "packages-dev": [
@@ -154,8 +107,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.4",
-        "ext-json": "*"
+        "php": "^7.4"
     },
     "platform-dev": [],
     "plugin-api-version": "2.1.0"
