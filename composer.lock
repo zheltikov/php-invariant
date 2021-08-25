@@ -4,24 +4,24 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "60222a2dc7742037533b3581fc5202cf",
+    "content-hash": "1404fdc178686677c8f60339b8e140a9",
     "packages": [
         {
             "name": "zheltikov/php-exceptions",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zheltikov/php-exceptions.git",
-                "reference": "b346ae65c32144f741cfffa8e9e00eb7b1c4f3d1"
+                "reference": "3da69489187defcf6bc1b1fd949a0e61bf9c3bf2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zheltikov/php-exceptions/zipball/b346ae65c32144f741cfffa8e9e00eb7b1c4f3d1",
-                "reference": "b346ae65c32144f741cfffa8e9e00eb7b1c4f3d1",
+                "url": "https://api.github.com/repos/zheltikov/php-exceptions/zipball/3da69489187defcf6bc1b1fd949a0e61bf9c3bf2",
+                "reference": "3da69489187defcf6bc1b1fd949a0e61bf9c3bf2",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.3"
+                "php": ">=7.3"
             },
             "require-dev": {
                 "nazar-pc/phpt-tests-runner": "^1.4"
@@ -44,9 +44,9 @@
             ],
             "support": {
                 "issues": "https://github.com/zheltikov/php-exceptions/issues",
-                "source": "https://github.com/zheltikov/php-exceptions/tree/1.0.0"
+                "source": "https://github.com/zheltikov/php-exceptions/tree/1.0.1"
             },
-            "time": "2021-07-13T09:24:39+00:00"
+            "time": "2021-08-25T09:36:28+00:00"
         }
     ],
     "packages-dev": [
@@ -107,7 +107,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.4"
+        "php": ">=7.4"
     },
     "platform-dev": [],
     "plugin-api-version": "2.1.0"
