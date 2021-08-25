@@ -1,5 +1,5 @@
 {
-  "version": "1.2.2",
+  "version": "1.2.3",
   "name": "zheltikov/php-invariant",
   "type": "library",
   "autoload": {
@@ -11,7 +11,7 @@
     ]
   },
   "require": {
-    "php": "^7.4",
+    "php": ">=7.4",
     "zheltikov/php-exceptions": "^1.0"
   },
   "require-dev": {
